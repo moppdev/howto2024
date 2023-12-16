@@ -1,0 +1,148 @@
+{
+    "party_info": [
+        {
+            "name": "Democratic Alliance",
+            "abbr": "DA",
+            "logo": "../img/da_logo.png",
+            "founded_year": 2000,
+            "political_stance": "centre",
+            "party_leader": "John Steenhuisen",
+            "leader_image": "../img/da_leader.png",
+            "parly_seats": 84,
+            "party_site": "da.org.za",
+            "values": ["Constitutionalism", "Non - Racialism", "Rule of Law", "Social Market Economy", "Federalism"],
+            "allied_with": "Multi-Party Charter"
+        },
+        {
+            "name": "Economic Freedom Fighters",
+            "abbr": "EFF",
+            "logo": "../img/eff_logo.png",
+            "political_stance": "far-left",
+            "founded_year": 2013,
+            "party_leader": "Julius Malema",
+            "leader_image": "../img/eff_leader.png",
+            "parly_seats": 44,
+            "party_site": "effonline.org",
+            "values": ["Left-wing populism", "Black Nationalism", "Pan Africanism", "Planned Economy/Communism", "Radical Economic Transformation"],
+            "allied_with": "N/A"
+        },
+        {
+            "name": "Rise Mzansi",
+            "abbr": "RISE",
+            "logo": "../img/rise_logo.png",
+            "founded_year": 2023,
+            "political_stance": "centre-left",
+            "party_leader": "Songezo Zibi",
+            "leader_image": "../img/rise_leader.png",
+            "parly_seats": null,
+            "party_site": "risemzansi.org",
+            "values": ["Constitutionalism", "Social Justice", "Equality", "Reform", "Social Democracy"],
+            "allied_with": "N/A"
+        },
+        {
+            "name": "Inkatha Freedom Party",
+            "abbr": "IFP",
+            "logo": "../img/ifp_logo.png",
+            "founded_year": 1975,
+            "political_stance": "right-wing",
+            "party_leader": "Velenkosini Hlabisa",
+            "leader_image": "../img/ifp_leader.png",
+            "parly_seats": 14,
+            "party_site": "ifp.org.za",
+            "values": ["Solidarity", "Freedom", "Unity in Diversity", "Federalism", "Conservative"],
+            "allied_with": "Multi-Party Charter"
+        },
+        {
+            "name": "Pan Africanist Congress of Azania",
+            "abbr": "PAC",
+            "logo": "../img/pac_logo.png",
+            "founded_year": 1959,
+            "political_stance": "left-wing",
+            "party_leader": "Mzwanele Nyhontso",
+            "leader_image": "../img/pac_leader.png",
+            "parly_seats": 1,
+            "party_site": "pac.org.za",
+            "values": ["Pan Africanism", "Socialism", "Black Nationalism"],
+            "allied_with": "Azanian Liberation Front (with AZAPO)"
+        },
+        {
+            "name": "Patriotic Alliance",
+            "abbr": "PA",
+            "logo": "../img/pa_logo.png",
+            "founded_year": 2013,
+            "political_stance": "none/populism",
+            "party_leader": "Gayton McKenzie",
+            "leader_image": "../img/pa_leader.png",
+            "parly_seats": null,
+            "party_site": "votepa.org.za",
+            "values": ["Populism", "Anti-immigration"],
+            "allied_with": "N/A"
+        },
+        {
+            "name": "Good Party",
+            "abbr": "GOOD",
+            "logo": "../img/good_logo.png",
+            "founded_year": 2018,
+            "political_stance": "centre-left",
+            "party_leader": "Patricia De Lille",
+            "leader_image": "../img/good_leader.png",
+            "parly_seats": 2,
+            "party_site": "forgood.org.za",
+            "values": ["Social Justice", "Basic Income Grant/Universal Income", "Social Democracy", "Equity"],
+            "allied_with": "N/A" 
+        },
+        {
+            "name": "ActionSA",
+            "abbr": "ActionSA",
+            "logo": "../img/asa_logo.png",
+            "founded_year": 2020,
+            "political_stance": "centre-right",
+            "party_leader": "Herman Mashaba",
+            "leader_image": "../img/asa_leader.png",
+            "parly_seats": null,
+            "party_site": "actionsa.org.za",
+            "values": ["Non - Racialism", "Rule of Law", "Social Justice", "Ethical Leadership", "Economic Prosperity"],
+            "allied_with": "Multi-Party Charter" 
+        },
+        {
+            "name": "Build One South Africa",
+            "abbr": "BOSA",
+            "logo": "../img/bosa_logo.png",
+            "founded_year": 2022,
+            "political_stance": "centre",
+            "party_leader": "Mmusi Maimane",
+            "leader_image": "../img/bosa_leader.png",
+            "parly_seats": null,
+            "party_site": "bosa.co.za",
+            "values": ["Independent Candidates", "Reform", "Centrism"],
+            "allied_with": "N/A" 
+        },
+        {
+            "name": "Freedom Front Plus",
+            "abbr": "FFPlus",
+            "logo": "../img/ff+_logo.png",
+            "founded_year": 1994,
+            "political_stance": "right-wing",
+            "party_leader": "Pieter Groenewald",
+            "leader_image": "../img/ff+_leader.png",
+            "parly_seats": 10,
+            "party_site": "vfplus.org.za",
+            "values": ["Minority Rights", "Self-Determination", "Afrikaans nationalism", "Christian Democracy"],
+            "allied_with": "Multi-Party Charter" 
+        },
+        {
+            "name": "African Christian Democratic Party",
+            "abbr": "ACDP",
+            "logo": "../img/acdp_logo.png",
+            "founded_year": 1993,
+            "political_stance": "centre-right to right-wing",
+            "party_leader": "Kenneth Meshoe",
+            "leader_image": "../img/acdp_leader.png",
+            "parly_seats": 4,
+            "party_site": "acdp.org.za",
+            "values": ["Christian Democracy", "Conservative", "Federalism"],
+            "allied_with": "Multi-Party Charter" 
+        }
+        
+    ]
+}
