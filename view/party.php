@@ -38,7 +38,7 @@
             </ul>
         </div>
 
-        <div class="right">
+        <div id="values">
             <h3>Values of <?php echo $party_info["name"] ?></h3>
             <ul>
                 <?php foreach ($party_info["values"] as $value): ?>

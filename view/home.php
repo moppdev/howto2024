@@ -59,7 +59,7 @@
                 <div>
                     <h2>Strategic Voting Map</h2>
 
-                    <p></p>
+                    <p>If you're indecisive about who to vote for, take the strategic route!</p>
             </div>
         </div>
     </a>

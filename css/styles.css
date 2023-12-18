@@ -11,8 +11,7 @@ header > nav {
 }
 
 footer {
-    bottom: 0;
-    position: relative;
+        position: relative;
 }
 
 #index > li {
@@ -69,6 +68,15 @@ main {
     position: relative;
 }
 
+#strat_hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/strat_img.png);
+    height: 45%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 .hero_text {
     text-align: center;
     transform: translate(-50%, -50%);
@@ -82,12 +90,114 @@ main {
 
 /* Phones */
 @media (max-width: 480px) {
-    
+    /* Section for the home page */
+    .feature_sections {
+        border: 1px solid black;
+        padding: 4em 2em;
+        border-radius: 1em;
+        margin: 1em 0;
+     }
+
+     /* @keyframes quizhover {
+        to {
+            background-color: rgb(97, 95, 179);
+            color: white;
+        }
+     }
+
+     .feature_sections:hover {
+        animation-name: quizhover;
+        animation-duration: 1.1s;
+        animation-fill-mode: forwards;
+     } */
+
+     #quizdiv {
+        background-image:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/quiz_img.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+     }
+
+     #voterreg {
+        background-image:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/vote_img.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+     }
+
+     #partypages {
+        background-image:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/index_img.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+     }
+
+     #strategicmap {
+        background-image:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/strat_img.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+     }
+
+     .tab_link {
+        text-decoration: none;
+        color: white;
+     }
 }
 
 /* Tablets */
-@media (max-width: 768px) {
+@media (min-width: 481px) {
+        /* Section for the home page */
+        .feature_sections {
+            border: 1px solid black;
+            padding: 4em 2em;
+            border-radius: 1em;
+            margin: 2em 0;
+         }
+    
+         @keyframes quizhover {
+            to {
+                background-color: rgb(97, 95, 179);
+                color: white;
+            }
+         }
+    
+         .feature_sections:hover {
+            animation-name: quizhover;
+            animation-duration: 1.1s;
+            animation-fill-mode: forwards;
+         }
+    
+         #quizdiv {
+            background-image: url(../img/quiz_img.png);
+            background-repeat: no-repeat;
+            background-size: 45% 100%;
+         }
+    
+         #voterreg {
+            background-image: url(../img/vote_img.png);
+            background-repeat: no-repeat;
+            background-size: 45% 100%;
+         }
+    
+         #partypages {
+            background-image: url(../img/index_img.png);
+            background-repeat: no-repeat;
+            background-size: 45% 100%;
+         }
+    
+         #strategicmap {
+            background-image: url(../img/strat_img.png);
+            background-repeat: no-repeat;
+            background-size: 45% 100%;
+         }
+    
+         .feature_sections > div {
+            text-align: right;
+            word-wrap: break-word;
 
+         }
+    
+         .tab_link {
+            text-decoration: none;
+            color: black;
+         }
 }
 
 /* Bigger tablets */
@@ -137,6 +247,12 @@ main {
 
      #partypages {
         background-image: url(../img/index_img.png);
+        background-repeat: no-repeat;
+        background-size: 45% 100%;
+     }
+
+     #strategicmap {
+        background-image: url(../img/strat_img.png);
         background-repeat: no-repeat;
         background-size: 45% 100%;
      }
@@ -211,6 +327,24 @@ main {
     .leader_img {
         /*max-width: 40%;*/
         border-radius: 1em;
-        border: solid 0.7em rgb(153, 150, 219);
+        border: solid 0.5em rgb(153, 150, 219);
+        margin-bottom: 3em;
+    }
+
+    #values {
+        margin-left: 44em;
+    }
+
+    #party_header, #party_facts {
+        border-bottom: 2px solid rgb(172, 169, 212);
+    }
+
+    #party_facts {
+        border-top: 2px solid rgb(172, 169, 212);
+    }
+
+    #map {
+        width: 650px;
+        height: 450px;
     }
 }
