@@ -23,12 +23,23 @@
 <main>
 
  <!-- Where the interactive provincial map powered by Leaflet will be  -->
- <div id="map"></div>
 
  <div class="container">
+    <div class="map_intro">
+        If you don't feel like thinking much about what party to vote for/support, and you agree the ANC must go, just vote strategically to remove the ANC! This map will return the top three 
+        strongest parties in a province that could unseat the ANC or block the ANC from government (the Western Cape for example). The parties returned
+        are based on 2019, 2021 LGE and recent by-election results.
+    </div>
+
+    <div class="map_intro">
+        Simply click on a province on the map to get started!
+    </div>
+
+    <div id="map"></div>
+
     <h2 id="province_name"></h2>
 
-
+    <div id="province_result"></div>
  </div>
 </main>
 

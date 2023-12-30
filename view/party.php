@@ -6,19 +6,28 @@
 
 <main>
     <div id="party_header">
-        <img class="img-thumbnail logo" src="<?php echo $party_info["logo"] ?>" alt='logo of <?php echo $party_info["abbr"]?>'/>
+        <div id="logo_align">
+            <img class="img-thumbnail" src="<?php echo $party_info["logo"] ?>" alt='logo of <?php echo $party_info["abbr"]?>'/>
+        </div>
         <h1><?php echo $party_info["name"] ?></h1>
-        <span class="left">Founded in: <?php echo $party_info["founded_year"] ?></span>
-        <span>Political Stance: <?php echo $party_info["political_stance"] ?></span>
     </div>
 
     <div id="party_summary">
         <img class="left leader_img" src="<?php echo $party_info["leader_image"] ?>" alt='photo of <?php echo $party_info["party_leader"]?>' />
         <div id="desc">
-            <h2>Party Leader: <?php echo $party_info["party_leader"]?></h2>
+            <div>
+                <h2>Party Leader: <?php echo $party_info["party_leader"]?></h2>
+            </div>
 
-            <h2>Summary</h2>
-            <p><?php echo $party_summary ?></p>
+            <div>
+                <h3>Founded in: <?php echo $party_info["founded_year"] ?></h3>
+                <h3>Political Stance: <?php echo $party_info["political_stance"] ?></h3>
+            </div>
+
+            <div>
+                <h2>Summary</h2>
+                <p><?php echo $party_summary ?></p>
+            </div>
         </div>
     </div>
 

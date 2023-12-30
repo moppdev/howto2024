@@ -7,7 +7,7 @@
     It is a centrist, liberal party that has been the official opposition since the 2004 elections and they are the official opposition in five of the nine provinces which includes Gauteng, KwaZulu Natal, Northern Cape, Eastern Cape, and Free State provinces. 
     The DA has governed the Western Cape since the 2009 elections with majorities ranging from 50% to 59%. 
     The DA also governs multiple municipalities either by coalition or their own majorities in the Western Cape, Northern Cape, KwaZulu Natal, Eastern Cape and Gauteng. 
-    They’ve also governed Cape Town since 2006 first by coalition and then by their own majorities since 2011. They recieved 20% of the vote in 2019.
+    They’ve also governed Cape Town since 2006 first by coalition and then by their own majorities since 2011. They received 20% of the vote in 2019.
     Most DA-governed areas have been repeatedly ranked the best in terms of service delivery and economic growth by both independent indexes and governmental institutions. The DA offers moderate policies, both centre-left and centre-right and they support the concept of federalism (devolving powers like healthcare, policing, transport, etc to provincial governments).
 
     TAG;

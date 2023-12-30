@@ -31,65 +31,188 @@ main {
     background-image: linear-gradient(rgb(169, 167, 231), white);
 }
 
-/* Hero section styling */
-#quiz_hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/quiz_img.png);
-    height: 45%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
+.map_intro {
+   padding: 1em 0em;
+ }
 
-#voter_hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/vote_img.png);
-    height: 45%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-#home_hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/home_img.png);
-    height: 45%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-#index_hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/index_img.png);
-    height: 45%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-#strat_hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/strat_img.png);
-    height: 45%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.hero_text {
-    text-align: center;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: white;
-}
-
+/* ///////////////////////////////////// */
 /* Media queries */
 
+/* Smaller phones */
+@media screen and (max-width: 368px) {
+    /* Section for the home page */
+    .feature_sections {
+        border: 1px solid black;
+        padding: 3em 4em;
+        border-radius: 1em;
+        margin: 1em -1.5em;
+     }
+
+     #quizdiv {
+        background-image:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/quiz_img.png);
+        background-repeat: no-repeat;
+        background-size: 129%;
+     }
+
+     #voterreg {
+        background-image:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/vote_img.png);
+        background-repeat: no-repeat;
+        background-size: 119%;
+     }
+
+     #partypages {
+        background-image:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/index_img.png);
+        background-repeat: no-repeat;
+        background-size: 119%;
+     }
+
+     #strategicmap {
+        background-image:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/strat_img.png);
+        background-repeat: no-repeat;
+        background-size: 119%;
+     }
+
+     .tab_link {
+        text-decoration: none;
+        color: white;
+     }
+
+     /* Quiz page's section */
+     .q_container {
+      border: 2px solid black;
+      border-radius: 1em;
+      margin: 1em 0.35em;
+      }
+
+      #question {
+         text-align: center;
+         padding: 1em;
+      }
+
+      #q_tracker {
+         text-align: center;
+         padding: 1em;
+      }
+
+      .quiz_grid {
+         text-align: center;
+         display: grid;
+         gap: 2.5px 8px;
+         grid-template-columns: 1;
+         grid-template-rows: auto;
+      }
+
+      .quiz_grid > button {
+         margin: 1em;
+         padding: 1.5em;
+      }
+
+   /* Hero section styling */
+   #quiz_hero {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/quiz_img.png);
+      height: 25%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+   }
+
+   #voter_hero {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/vote_img.png);
+      height: 25%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+   }
+
+   #home_hero {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/home_img.png);
+      height: 25%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+   }
+
+   #index_hero {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/index_img.png);
+      height: 25%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+   }
+
+   #strat_hero {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/strat_img.png);
+      height: 25%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+   }
+
+   .hero_text {
+      text-align: center;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: white;
+   }
+
+        /* Party page section */
+ 
+     #logo_align {
+         text-align: center;
+     }
+ 
+     #desc > div {
+       margin: 2em 0;
+     }
+
+     #party_summary, #party_header, #party_facts, #party_link, main {
+         clear: both;
+         padding: 1em;
+     }
+ 
+     #party_link > button {
+         text-align: center;
+     }
+ 
+     #party_link > a {
+         text-align: center;
+     }
+ 
+     .leader_img {
+         max-width: 100%;
+         border-radius: 1em;
+         border: solid 0.5em rgb(153, 150, 219);
+         margin-bottom: 1em;
+     }
+ 
+     #party_header, #party_facts {
+         border-bottom: 5px solid rgb(110, 108, 138);
+     }
+ 
+     #party_facts {
+         border-top: 5px solid rgb(110, 108, 138);
+     }
+
+       /* Strategic map section */
+       #map_container {
+         text-align: center;
+       }
+   
+       #map {
+         width: 100%;
+         height: 350px;
+       }
+}
+
 /* Phones */
-@media (max-width: 480px) {
+@media screen and (min-width: 369px) {
     /* Section for the home page */
     .feature_sections {
         border: 1px solid black;
@@ -98,23 +221,10 @@ main {
         margin: 1em 0;
      }
 
-     /* @keyframes quizhover {
-        to {
-            background-color: rgb(97, 95, 179);
-            color: white;
-        }
-     }
-
-     .feature_sections:hover {
-        animation-name: quizhover;
-        animation-duration: 1.1s;
-        animation-fill-mode: forwards;
-     } */
-
      #quizdiv {
         background-image:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/quiz_img.png);
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: 129%;
      }
 
      #voterreg {
@@ -139,84 +249,312 @@ main {
         text-decoration: none;
         color: white;
      }
+
+     /* Quiz page's section */
+     .q_container {
+      border: 2px solid black;
+      border-radius: 1em;
+      margin: 1em 0.35em;
+      }
+
+      #question {
+         text-align: center;
+         padding: 1em;
+      }
+
+      #q_tracker {
+         text-align: center;
+         padding: 1em;
+      }
+
+      .quiz_grid {
+         text-align: center;
+         display: grid;
+         gap: 2.5px 8px;
+         grid-template-columns: 1;
+         grid-template-rows: auto;
+      }
+
+      .quiz_grid > button {
+         margin: 1em;
+         padding: 1.5em;
+      }
+
+   /* Hero section styling */
+   #quiz_hero {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/quiz_img.png);
+      height: 35%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+   }
+
+   #voter_hero {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/vote_img.png);
+      height: 32%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+   }
+
+   #home_hero {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/home_img.png);
+      height: 32%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+   }
+
+   #index_hero {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/index_img.png);
+      height: 32%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+   }
+
+   #strat_hero {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/strat_img.png);
+      height: 32%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+   }
+
+   .hero_text {
+      text-align: center;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: white;
+   }
+
+        /* Party page section */
+ 
+      #logo_align {
+         text-align: center;
+     }
+ 
+     #desc > div {
+       margin: 2em 0;
+     }
+ 
+     #party_summary, #party_header, #party_facts, #party_link, main {
+         clear: both;
+         padding: 1em;
+     }
+ 
+     #party_link > button {
+         text-align: center;
+     }
+ 
+     #party_link > a {
+         text-align: center;
+     }
+ 
+     .leader_img {
+         max-width: 100%;
+         border-radius: 1em;
+         border: solid 0.5em rgb(153, 150, 219);
+         margin-bottom: 1em;
+     }
+ 
+     #party_header, #party_facts {
+         border-bottom: 5px solid rgb(110, 108, 138);
+     }
+ 
+     #party_facts {
+         border-top: 5px solid rgb(110, 108, 138);
+     }
+
+   /* Strategic map section */
+    #map_container {
+      text-align: center;
+    }
+
+    #map {
+         width: 100%;
+         height: 400px;
+    }
 }
 
 /* Tablets */
-@media (min-width: 481px) {
-        /* Section for the home page */
-        .feature_sections {
-            border: 1px solid black;
-            padding: 4em 2em;
-            border-radius: 1em;
-            margin: 2em 0;
-         }
-    
-         @keyframes quizhover {
-            to {
-                background-color: rgb(97, 95, 179);
-                color: white;
-            }
-         }
-    
-         .feature_sections:hover {
-            animation-name: quizhover;
-            animation-duration: 1.1s;
-            animation-fill-mode: forwards;
-         }
-    
-         #quizdiv {
-            background-image: url(../img/quiz_img.png);
-            background-repeat: no-repeat;
-            background-size: 45% 100%;
-         }
-    
-         #voterreg {
-            background-image: url(../img/vote_img.png);
-            background-repeat: no-repeat;
-            background-size: 45% 100%;
-         }
-    
-         #partypages {
-            background-image: url(../img/index_img.png);
-            background-repeat: no-repeat;
-            background-size: 45% 100%;
-         }
-    
-         #strategicmap {
-            background-image: url(../img/strat_img.png);
-            background-repeat: no-repeat;
-            background-size: 45% 100%;
-         }
-    
-         .feature_sections > div {
-            text-align: right;
-            word-wrap: break-word;
+@media screen and (min-width: 745px) {
+   /* Section for the home page */
+   .feature_sections {
+      border: 1px solid black;
+      padding: 4em 2em;
+      border-radius: 1em;
+      margin: 1em 4em;
+   }
 
-         }
-    
-         .tab_link {
-            text-decoration: none;
-            color: black;
-         }
+   @keyframes quizhover {
+      to {
+          background-color: rgb(97, 95, 179);
+          color: white;
+          background-image: none;
+      }
+   }
+
+   .feature_sections:hover {
+      animation-name: quizhover;
+      animation-duration: 1.1s;
+      animation-fill-mode: forwards;
+   }
+
+   #quizdiv {
+      background-image:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/quiz_img.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+   }
+
+   #voterreg {
+      background-image:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/vote_img.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+   }
+
+   #partypages {
+      background-image:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/index_img.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+   }
+
+   #strategicmap {
+      background-image:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/strat_img.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+   }
+
+   .tab_link {
+      text-decoration: none;
+      color: white;
+   }
+
+     /* Quiz page's section */
+     .q_container {
+      border: 2px solid black;
+      border-radius: 1em;
+      margin: 1em 4em;
+   }
+
+   #question {
+      text-align: center;
+      padding: 1em;
+   }
+
+   #q_tracker {
+      text-align: center;
+      padding: 1em;
+   }
+
+   .quiz_grid {
+      text-align: center;
+      display: grid;
+      gap: 2.5px 10px;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+   }
+
+   .quiz_grid > button {
+      margin: 1em;
+      padding: 1.5em;
+   }
+
+      /* Party page section */
+ 
+     #desc > div {
+       margin: 2em 0;
+     }
+ 
+     #party_summary, #party_header, #party_facts, #party_link, main {
+         clear: both;
+         padding: 1em;
+     }
+ 
+     #party_link > button {
+         text-align: center;
+     }
+ 
+     #party_link > a {
+         text-align: center;
+     }
+ 
+     .leader_img {
+         max-width: 100%;
+         border-radius: 1em;
+         border: solid 0.5em rgb(153, 150, 219);
+         margin-bottom: 1em;
+     }
+ 
+     #party_header, #party_facts {
+         border-bottom: 5px solid rgb(110, 108, 138);
+     }
+ 
+     #party_facts {
+         border-top: 5px solid rgb(110, 108, 138);
+     }
+
+   /* Strategic map section */
+    #map_container {
+      text-align: center;
+    }
+
+    #map {
+         width: 450px;
+         height: 350px;
+    }
 }
 
 /* Bigger tablets */
 @media (max-width: 1024px) {
+    /* Party page section */
 
-}
+  #desc > div {
+    margin: 2em 0;
+  }
 
-/* Laptops and smaller desktops */
-@media (max-width: 1200px) {
+  #party_summary, #party_header, #party_facts, #party_link, main {
+      padding: 1em;
+  }
 
+  #party_link > button {
+      text-align: center;
+  }
+
+  #party_link > a {
+      text-align: center;
+  }
+
+  .leader_img {
+      max-width: 100%;
+      border-radius: 1em;
+      border: solid 0.5em rgb(153, 150, 219);
+      margin-bottom: 1em;
+  }
+
+  #party_header, #party_facts {
+      border-bottom: 5px solid rgb(110, 108, 138);
+  }
+
+  #party_facts {
+      border-top: 5px solid rgb(110, 108, 138);
+  }
 }
 
 /* Bigger desktops */
-@media (min-width: 1201px) {
+@media screen and (min-width: 1201px) {
     /* Section for the home page */
     .feature_sections {
         border: 1px solid black;
         padding: 4em 2em;
-        margin: 2em 10em;
+        margin: 2em 6em;
         border-radius: 1em;
      }
 
@@ -306,9 +644,13 @@ main {
         float:right;
         margin-right: 41em;
     }
-
+   
     #desc {
         padding-left: 28em;
+    }
+
+    #desc > div {
+      margin: 2em 0;
     }
 
     #party_summary, #party_header, #party_facts, #party_link, main {
@@ -343,8 +685,67 @@ main {
         border-top: 2px solid rgb(172, 169, 212);
     }
 
-    #map {
-        width: 650px;
-        height: 450px;
-    }
+   /* Hero section styling */
+   #quiz_hero {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/quiz_img.png);
+      height: 45%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+   }
+
+   #voter_hero {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/vote_img.png);
+      height: 45%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+   }
+
+   #home_hero {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/home_img.png);
+      height: 45%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+   }
+
+   #index_hero {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/index_img.png);
+      height: 45%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+   }
+
+   #strat_hero {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/strat_img.png);
+      height: 45%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+   }
+
+   .hero_text {
+      text-align: center;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: white;
+   }
+
+   /* party page */
+   #party_header, #party_facts {
+      border-bottom: 5px solid rgb(110, 108, 138);
+  }
+
+  #party_facts {
+      border-top: 5px solid rgb(110, 108, 138);
+  }
 }
