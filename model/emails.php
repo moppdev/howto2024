@@ -33,7 +33,7 @@
             $headers = "From: $name <$email>";
 
             $recaptcha_response = $_POST['recaptchaResponse'];
-            $recaptcha_secret = 'YOUR_RECAPTCHA_SECRET_KEY'; // Replace with your actual secret key
+            $recaptcha_secret = '6LfCbkIpAAAAAHG0aw1GEy2dcORM0cMqWK2SI6Fn';
             $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
             $recaptcha_data = [
                 'secret' => $recaptcha_secret,
@@ -48,19 +48,13 @@
             ];
             $recaptcha_context = stream_context_create($recaptcha_options);
             $recaptcha_result = file_get_contents($recaptcha_url, false, $recaptcha_context);
-            $recaptcha = json_decode($recaptcha); // Decode the JSON response
+            $recaptcha = json_decode($recaptcha_result);
             var_dump($recaptcha);
             if($recaptcha->success == true && $recaptcha->score >= 0.5 && $recaptcha->action == "submit"){ // If the response is valid
                 // run email send routine
-                echo $recaptcha->success;
-                echo $recaptcha->score;
-                echo $recaptcha->action;
                 mail($recipient, 'Contact Form Submission', $message, $headers);
                 echo 'Your message was sent successfully.'; // Success message
             }else{
-                echo $recaptcha->success;
-                echo $recaptcha->score;
-                echo $recaptcha->action;
                 echo 'Something went wrong. Please try again later'; // Error message
             }
         } else {
