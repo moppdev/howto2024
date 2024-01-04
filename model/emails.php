@@ -3,25 +3,26 @@
     $errors = [];
     
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Get POST data
-        $name = isset($_POST['name']) ? strip_tags(trim($_POST['name'])) : '';
-        $email = isset($_POST['email']) ? trim($_POST['email']) : '';
-        $message = isset($_POST['message']) ? strip_tags(trim($_POST['message'])) : '';
-    
+        // Get and clean POST data
+        $name = isset($_POST['name']) ? htmlspecialchars($_POST['name']) : '';
+        $email = isset($_POST['email']) ? $_POST['email'] : '';
+        $message = isset($_POST['message']) ? htmlspecialchars($_POST['message']) : '';
+        
+        $email = filter_var($email, FILTER_SANITIZE_EMAIL);
+        $email = filter_var($email, FILTER_VALIDATE_EMAIL);
+        
         // Validate form fields
         if (empty($name)) {
             $errors[] = 'Name is empty';
         }
-    
+        
         if (empty($email)) {
-            $errors[] = 'Email is empty';
-        } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            $errors[] = 'Email is invalid';
+            $errors[] = 'Email is empty or invalid';
         }
-    
+        
         if (empty($message)) {
             $errors[] = 'Message is empty';
-        }
+        }        
     
         // If no errors, send email
         if (empty($errors)) {
@@ -30,12 +31,37 @@
     
             // Additional headers
             $headers = "From: $name <$email>";
-    
-            // Send email
-            if (mail($recipient, $message, $headers)) {
-                echo "Email sent successfully!";
-            } else {
-                echo "Failed to send email. Please try again later.";
+
+            $recaptcha_response = $_POST['recaptchaResponse'];
+            $recaptcha_secret = 'YOUR_RECAPTCHA_SECRET_KEY'; // Replace with your actual secret key
+            $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+            $recaptcha_data = [
+                'secret' => $recaptcha_secret,
+                'response' => $recaptcha_response
+            ];
+            
+            $recaptcha_options = [
+                'http' => [
+                    'method' => 'POST',
+                    'content' => http_build_query($recaptcha_data)
+                ]
+            ];
+            $recaptcha_context = stream_context_create($recaptcha_options);
+            $recaptcha_result = file_get_contents($recaptcha_url, false, $recaptcha_context);
+            $recaptcha = json_decode($recaptcha); // Decode the JSON response
+            var_dump($recaptcha);
+            if($recaptcha->success == true && $recaptcha->score >= 0.5 && $recaptcha->action == "submit"){ // If the response is valid
+                // run email send routine
+                echo $recaptcha->success;
+                echo $recaptcha->score;
+                echo $recaptcha->action;
+                mail($recipient, 'Contact Form Submission', $message, $headers);
+                echo 'Your message was sent successfully.'; // Success message
+            }else{
+                echo $recaptcha->success;
+                echo $recaptcha->score;
+                echo $recaptcha->action;
+                echo 'Something went wrong. Please try again later'; // Error message
             }
         } else {
             // Display errors

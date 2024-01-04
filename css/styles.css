@@ -14,6 +14,10 @@ footer {
         position: relative;
 }
 
+.grecaptcha-badge {
+   display:none;
+}
+
 #index > li {
     padding: 0.5em;
 }
@@ -208,7 +212,34 @@ main {
        #map {
          width: 100%;
          height: 350px;
+         margin-bottom: 1em;
        }
+
+         /* strat map page */
+      .img_result {
+         width: 93%;
+         border: 2px solid black;
+         background-color: white;
+         padding: 1em;
+         border-radius: 2em;
+      }
+
+      #province_name {
+         padding-top: 0.5em;
+         padding-bottom: 0.5em;
+         border-top: 5px solid rgb(110, 108, 138);
+         border-bottom: 5px solid rgb(110, 108, 138);
+      }
+
+      #province_result {
+         display: grid;
+         grid-template-columns: auto auto auto;
+         grid-template-rows: auto;
+      }
+
+      #province_result > a {
+      margin: 1em 0.2em;
+      }
 }
 
 /* Phones */
@@ -381,7 +412,34 @@ main {
     #map {
          width: 100%;
          height: 400px;
+         margin-bottom: 1em;
     }
+
+         /* strat map page */
+         .img_result {
+            width: 93%;
+            border: 2px solid black;
+            background-color: white;
+            padding: 1em;
+            border-radius: 2em;
+         }
+
+         #province_name {
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            border-top: 5px solid rgb(110, 108, 138);
+            border-bottom: 5px solid rgb(110, 108, 138);
+         }
+   
+         #province_result {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto;
+         }
+   
+         #province_result > a {
+         margin: 1em 0.2em;
+         }
 }
 
 /* Tablets */
@@ -509,6 +567,7 @@ main {
     #map {
          width: 450px;
          height: 350px;
+         margin-bottom: 1em;
     }
 }
 
@@ -748,4 +807,30 @@ main {
   #party_facts {
       border-top: 5px solid rgb(110, 108, 138);
   }
+
+         /* strat map page */
+         .img_result {
+            width: 75%;
+            border: 2px solid black;
+            background-color: white;
+            padding: 1em;
+            border-radius: 2em;
+         }
+
+         #province_name {
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            border-top: 5px solid rgb(110, 108, 138);
+            border-bottom: 5px solid rgb(110, 108, 138);
+         }
+   
+         #province_result {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto;
+         }
+   
+         #province_result > a {
+         margin: 1em 0.2em;
+         }
 }
