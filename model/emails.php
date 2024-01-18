@@ -26,12 +26,13 @@
     
         // If no errors, send email
         if (empty($errors)) {
-            // Recipient email address (replace with your own)
+            // Recipient email address
             $recipient = "howtovote2024@gmail.com";
     
             // Additional headers
             $headers = "From: $name <$email>";
 
+            // Get the response and recaptcha info
             $recaptcha_response = $_POST['recaptchaResponse'];
             $recaptcha_secret = '6LfCbkIpAAAAAHG0aw1GEy2dcORM0cMqWK2SI6Fn';
             $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
@@ -40,16 +41,18 @@
                 'response' => $recaptcha_response
             ];
             
+            // context options to make filegetcontents do a POST
             $recaptcha_options = [
                 'http' => [
                     'method' => 'POST',
                     'content' => http_build_query($recaptcha_data)
                 ]
             ];
+
+            // Do the POST request and process the returned JSON from reCaptcha
             $recaptcha_context = stream_context_create($recaptcha_options);
             $recaptcha_result = file_get_contents($recaptcha_url, false, $recaptcha_context);
             $recaptcha = json_decode($recaptcha_result);
-            var_dump($recaptcha);
             if($recaptcha->success == true && $recaptcha->score >= 0.5 && $recaptcha->action == "submit"){ // If the response is valid
                 // run email send routine
                 mail($recipient, 'Contact Form Submission', $message, $headers);

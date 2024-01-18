@@ -2,39 +2,63 @@
 const questionsAndAnswers = [
     {
         question: "What is your preferred economic policy?",
-        answers: ["Extensive government control and regulation for social welfare", 
-        "Balanced government intervention to address market failures", 
-        "Minimal government interference, favoring free market principles"],
-        answerValues: [1, 5, 10]
+        answers: ["Extensive government control over the economy and implementation of socialist policies", 
+        "Balanced government intervention in the economy to address market failures, implementation of moderate economic policies to manage the economy pragmatically", 
+        "Minimal/no government interference in the economy, favoring free market principles and implementing capitalist policies"],
+        answerValues: [2, 4, 6]
     },
     {
         question: "What is your stance on immigration?",
         answers: ["I support open borders, we must welcome all", 
         "I think we need to reform immigration and strengthen our borders, but immigration should be relatively relaxed", 
-        "I think we need to have stronger immigration control"],
-        answerValues: [1, 5, 10]
+        "I think we need to have stronger immigration and border control. We must tighten immigration."],
+        answerValues: [1, 4, 8]
     },
     {
         question: "What is your stance on potential privatization of the SOEs like Eskom, Transnet, etc?",
-        answers: ["The SOEs shouldn't be privatized at all, the state can't work with the private sector", 
-        "The private sector should be brought in to help the SOEs, but only partly privatizing to keep the SOEs under state control", 
-        "All SOEs must be fully privatized or mostly privatized, SOEs are an outdated concept"],
+        answers: ["The SOEs shouldn't be privatized at all, the state must have entities under its control to maintain a developmental state", 
+        "The private sector should be brought in to help the SOEs, but only by partly privatizing the SOEs to keep them under state control", 
+        "All SOEs must be fully privatized or mostly privatized, SOEs are an outdated concept, let the market lead the way"],
+        answerValues: [3, 6, 9]
+    },
+    {
+        question: "What do you think of the NHI Bill/NHI in general?",
+        answers: ["It's a good idea. The private medical aid sector must be nationalized to provide universal healthcare",
+                    "The NHI Bill is a bad idea as it recklessly nationalizes the private medical aid sector, although I'm not opposed to the idea of an NHI",
+                    "I'm completely opposed to the idea of a NHI and the NHI Bill. We shouldn't interfere with the private sector or accrue more state expenses"],
         answerValues: [1, 5, 10]
     },
     {
-        question: "",
-        answers: [],
-        answerValues: [1, 5, 10]
+        question: "South Africa belongs to all South Africans, regardless of their race. Do you agree with this statement?",
+        answers: ["Yes, definitely", "Neutral/Not Sure", "No, not at all"],
+        answerValues: [5, 0, 10]
     },
     {
-        question: "",
-        answers: [],
-        answerValues: [1, 5, 10]
+        question: "Do you think that powers like policing, healthcare, etc should be fully devolved/given to the provinces?",
+        answers: ["Yes, definitely. It'll allow the provinces to function on their own in case of central government failure",
+                    "I don't really have a stance about this",
+                    "No, such powers must remain under the central government to maintain uniformity in law and authority"                    
+    ],
+        answerValues: [5, 0, 7]
     },
     {
-        question: "",
-        answers: [],
-        answerValues: [1, 5, 10]
+        question: "What is your stance on land reform?",
+        answers: ["Land must be expropriated without compensation", 
+        "There's enough provision in the Constitution at the moment to do land reform", 
+        "There is no need for land reform/redistribution by the government."],
+        answerValues: [5, 8, 9]
+    },
+    {
+        question: "What do you think should be done to end load shedding?",
+        answers: ["The state must simply build more power stations and maintain a monopoly on energy generation and transmission", 
+        "The state's monopoly must be broken to allow the private sector to add generation capacity to the grid and Eskom must be maintained as a transmission SOE", 
+        "Eskom must be completely privatised and the private sector should lead the way"],
+        answerValues: [10, 12, 14]
+    },
+    {
+        question: "Do you believe that religion and politics should mix?",
+        answers: ["Yes, there's no problem with that", "Neutral/Don't have a stance", "No, it's not a good idea"],
+        answerValues: [10, 0, 15]
     }
 ];
 
@@ -56,17 +80,10 @@ document.addEventListener("DOMContentLoaded", () => {
     answerButtons.forEach(button => {
         button.addEventListener('click', () => {
             const selectedValue = button.value;
-            addScore(selectedValue);
+            addScore(Number(selectedValue));
             loadNewQuestion();
         });
     });
-
-
-    // Determine's the party needed based on the partyCompatScore
-    function determineParty(score)
-    {
-        // TBA
-    }
 
     // Add the the selected answer's value to the compatibility score
     function addScore(value)
@@ -83,10 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // If the questions have all been answered, load the result onto the page
         if (currentQuestionCounter + 1 > questionsAndAnswers.length)
         {
-            document.getElementsByTagName("main")[0].innerHTML = "";
-            let abbr = determineParty(partyCompatScore);
-
-            return;
+            determineParty(partyCompatScore);
         }
         else
         {
@@ -112,3 +126,51 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 });
+
+// Determine's the party needed based on the partyCompatScore
+function determineParty(score)
+{
+    console.log(score);
+    return getPartyInfo("DA");
+}
+
+// Function that retrieves the information of each party's php page
+function getPartyInfo(party_abbr)
+{
+        fetch(`../model/partyinfo.json`)
+        .then(response => {
+            return response.json();
+        })
+        .then(data => {
+            let party_array = data["party_info"];
+            for (let i = 0; i < party_array.length; i++)
+            {
+                let current_party = party_array[i];
+                if (current_party.abbr.toLowerCase() === party_abbr.toLowerCase())
+                {
+                    let party = current_party;
+
+                    let abbr = party.abbr;
+                    const element = document.getElementsByClassName("q_container")[0];
+                    element.innerHTML = "";
+                    element.style.display = "none";
+                    document.getElementById("q_tracker").textContent = `Your Result: ${abbr}`;
+        
+                    // Display the party's logo and the link to the party's page on the site
+                    const image = document.createElement("img");
+                    image.src = party.logo;
+                    image.alt = `Logo of ${abbr}`;
+
+                    const link = document.createElement("a");
+                    link.href = `party.php?party=${abbr.toLowerCase()}`;
+                    link.textContent = `Go to the ${abbr} page`;
+                    link.classList.add("link-primary");
+                    
+                    const main = document.getElementsByTagName("main")[0];
+                    main.appendChild(image);
+                    main.appendChild(link);
+                    break;
+                }
+            }
+        });
+};

@@ -132,7 +132,6 @@ function getPartyInfo(party_abbr)
         for (let i = 0; i < party_array.length; i++)
         {
             let current_party = party_array[i];
-            console.log(current_party.abbr);
             if (current_party.abbr.toLowerCase() === party_abbr.toLowerCase())
             {
                 createResultElement(current_party.logo, `party.php?party=${current_party.abbr.toLowerCase()}`, current_party.abbr);
