@@ -131,7 +131,41 @@ document.addEventListener("DOMContentLoaded", () => {
 function determineParty(score)
 {
     console.log(score);
-    return getPartyInfo("DA");
+
+    // Initiate the array containing the names of parties related to a certain range
+    // and the randomized index to select a random party from the array
+    let name_array = [];
+    let random_index = 0;
+
+    // Check score against ranges to select a party within that section of political spectrum
+    if (score >= 29 && score <= 54)
+    {
+        name_array = ["PAC", "EFF"];
+        random_index = Math.floor(Math.random() * 2);
+        return getPartyInfo(name_array[random_index]);
+    }
+    else if (score >= 55 && score <= 60)
+    {
+        name_array = ["BOSA", "RISE", "GOOD", "PA"];
+        random_index = Math.floor(Math.random() * 4);
+        return getPartyInfo(name_array[random_index]);
+    }
+    else if (score >= 61 && score <= 66)
+    {
+        name_array = ["ActionSA", "DA"];
+        random_index = Math.floor(Math.random() * 2);
+        return getPartyInfo(name_array[random_index]);
+    }
+    else if (score >= 67 && score <= 81)
+    {
+        name_array = ["ACDP", "IFP", "FFPlus"];
+        random_index = Math.floor(Math.random() * 4);
+        return getPartyInfo(name_array[random_index]);
+    }
+    else
+    {
+        return getPartyInfo("DA");
+    }
 }
 
 // Function that retrieves the information of each party's php page

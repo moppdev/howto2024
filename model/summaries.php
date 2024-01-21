@@ -46,6 +46,8 @@
     Founded in 2022, by former DA Federal Leader Mmusi Maimane, Build One South Africa is a centrist, reformist and community-based party. 
     It also has shown notions of supporting direct democracy by the way they select their candidates for Parliament by having applications open to all even outside the party.
 
+    BOSA has a 10-point practically-oriented list of solutions that includes grants for first-time employees that are graduates, a BIG, buliding five nuclear power stations within 10 years, etc.
+
     TAG;
     $ffplus = <<<'TAG'
     Originally founded as the Freedom Front by SADF General Constand Viljoen in 1994, the Freedom Front Plus was formed in 2003 by the merging of the Afrikaner Eenheidsbeweging (Afrikaner Unity Movement), the Conservative Party (the extremist split from the National Party in the Apartheid era), the Freedom Front and the Federal Alliance.
