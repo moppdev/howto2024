@@ -13,6 +13,10 @@
 
 <!-- Main content of this page which would be the Party Quiz -->
 <main>
+
+        <p>DISCLAIMER: Don't take this quiz too seriously, it's only meant to recommend a party to vote for generally based on what you answer. 
+            So it might not be too precise.
+            You could always go through their policies (and other parties') first before making a decision. </p>
     
         <h2 id="q_tracker"></h2>
         <div class="q_container">

@@ -130,7 +130,6 @@ document.addEventListener("DOMContentLoaded", () => {
 // Determine's the party needed based on the partyCompatScore
 function determineParty(score)
 {
-    console.log(score);
 
     // Initiate the array containing the names of parties related to a certain range
     // and the randomized index to select a random party from the array
@@ -138,13 +137,13 @@ function determineParty(score)
     let random_index = 0;
 
     // Check score against ranges to select a party within that section of political spectrum
-    if (score >= 29 && score <= 54)
+    if (score >= 29 && score <= 44)
     {
         name_array = ["PAC", "EFF"];
         random_index = Math.floor(Math.random() * 2);
         return getPartyInfo(name_array[random_index]);
     }
-    else if (score >= 55 && score <= 60)
+    else if (score >= 45 && score <= 60)
     {
         name_array = ["BOSA", "RISE", "GOOD", "PA"];
         random_index = Math.floor(Math.random() * 4);
@@ -189,19 +188,20 @@ function getPartyInfo(party_abbr)
                     element.innerHTML = "";
                     element.style.display = "none";
                     document.getElementById("q_tracker").textContent = `Your Result: ${abbr}`;
+                    document.getElementById("q_tracker").style.textAlign = "left";
         
                     // Display the party's logo and the link to the party's page on the site
                     const image = document.createElement("img");
                     image.src = party.logo;
+                    image.id = "party_img";
                     image.alt = `Logo of ${abbr}`;
 
                     const link = document.createElement("a");
+                    link.id = "link_img"
                     link.href = `party.php?party=${abbr.toLowerCase()}`;
-                    link.textContent = `Go to the ${abbr} page`;
-                    link.classList.add("link-primary");
                     
                     const main = document.getElementsByTagName("main")[0];
-                    main.appendChild(image);
+                    link.appendChild(image);
                     main.appendChild(link);
                     break;
                 }

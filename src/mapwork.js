@@ -61,6 +61,14 @@ var provinceData = {
     ]
 };
 
+// Default province style
+var defaultStyle = {
+    weight: 2,
+    color: '#63ab84',
+    dashArray: '',
+    fillOpacity: 0.5
+};
+
 // Get the province title h1 and province result div
 let provinceTitle = document.getElementById("province_name");
 let provinceResult = document.getElementById("province_result");
@@ -92,7 +100,7 @@ function highlightProvince(e)
     e.target.setStyle(
         {
             weight: 5,
-            color: '#689',
+            color: '#434acc',
             dashArray: '',
             fillOpacity: 0.7
         }
@@ -104,7 +112,7 @@ function highlightProvince(e)
 // Mouseout event that clears the province that was hovered over's highlight
 function resetProvince(e)
 {
-    //geojson.resetStyle(e.target);
+    e.target.setStyle(defaultStyle);
 }
 
 // Adds a party to the results div
@@ -232,6 +240,7 @@ async function updateProvinceGeometries() {
 
    // Once all geometries are fetched, add GeoJSON data to the map
    L.geoJson(provinceData, {
+    style: defaultStyle,
     onEachFeature: eventsWrapper
   }).addTo(map);
 }
