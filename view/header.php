@@ -14,6 +14,10 @@
                         <li class="nav-item"><a class="nav-link text-light" href="voterregs.php">Voter Registration</a></li>
                         <li class="nav-item"><a class="nav-link text-light" href="partyindex.php">Party Index</a></li>
                         <li class="nav-item"><a class="nav-link text-light" href="strategicmap.php">Strategic Voting Map</a></li>
+                        <li class="nav-item">
+                            <a href="https://www.buymeacoffee.com/primesteakdev" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" 
+                            style="height: 38px !important;width: 152px !important;padding: 0.1em;margin-left: 1em;" ></a>
+                        </li>
                     </ul>
                 </div>
             </div>
