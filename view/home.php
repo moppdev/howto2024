@@ -12,12 +12,12 @@
 <main>
 
     <p>
-        Fellow South Africans (Pardon the Ramaphosa-ism), we are at a crossroads. Next year is a make or break election for our country. 
+        Fellow South Africans (Pardon the Ramaphosa-ism), we are at a crossroads. This year is a make or break election for our country. 
         The ANC have destroyed this country, it cannot go on like this. Thus I decided to make this site to do my part in bringing an end to ANC misrule.
     </p>
     <p>
         Use this site to help you get registered for the South African National and Provincial Elections 2024 
-        or to figure out what party/which parties to support to unseat the ANC in 2024!
+        or to figure out what opposition party/which opposition parties to support to unseat the ANC in 2024! Let's unite behind the opposition!
     </p>
 
     <a href="partyquiz.php" class="tab_link">

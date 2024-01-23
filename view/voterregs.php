@@ -31,7 +31,7 @@
 
         <h2>And on voting day? What do I need to do/have then?</h2>
         <p>
-            On voting day, <a href="https://www.elections.org.za/pw/Voter/Voter-Information" target="_blank">check that you're correctly registered</a> (preferrably before it's voting day lol) 
+            On voting day, <a href="https://www.elections.org.za/pw/Voter/Voter-Information" target="_blank">check that you're correctly registered</a> (preferrably before it's voting day) 
             and <a target="_blank" href="https://maps.elections.org.za/vsfinder/">check your voting station</a>. 
             Head to your voting station with your ID. And most importantly, VOTE!
         </p>

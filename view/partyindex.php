@@ -13,7 +13,7 @@
 
     <div class="container">
         <p>
-            Here is the list of political parties covered by this site.
+            Here is the list of opposition parties covered by this site.
         </p>
 
         <!-- Actual list of political parties covered and their respective links -->

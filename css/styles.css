@@ -641,7 +641,7 @@ main {
     .feature_sections {
         border: 1px solid black;
         padding: 4em 2em;
-        margin: 2em 6em;
+        margin: 2em 15em;
         border-radius: 1em;
      }
 
@@ -661,25 +661,25 @@ main {
      #quizdiv {
         background-image: url(../img/quiz_img.png);
         background-repeat: no-repeat;
-        background-size: 45% 100%;
+        background-size: 40% 100%;
      }
 
      #voterreg {
         background-image: url(../img/vote_img.png);
         background-repeat: no-repeat;
-        background-size: 45% 100%;
+        background-size: 40% 100%;
      }
 
      #partypages {
         background-image: url(../img/index_img.png);
         background-repeat: no-repeat;
-        background-size: 45% 100%;
+        background-size: 40% 100%;
      }
 
      #strategicmap {
         background-image: url(../img/strat_img.png);
         background-repeat: no-repeat;
-        background-size: 45% 100%;
+        background-size: 40% 100%;
      }
 
      .feature_sections > div {
