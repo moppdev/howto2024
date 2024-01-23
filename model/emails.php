@@ -1,7 +1,17 @@
 <?php 
     // Handles the email workings from the contact form on the Contact page
     $errors = [];
+
+    // Include path to PHPMailer
+    // set_include_path('/xampp/htdocs/howtovote2024/PHPMailer');
+    // require_once "PHPMailerAutoload.php";
+    use PHPMailer\PHPMailer\PHPMailer;
+
+    require '../PHPMailer/src/Exception.php';
+    require '../PHPMailer/src/PHPMailer.php';
+    require '../PHPMailer/src/SMTP.php';
     
+    // Check inputs
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get and clean POST data
         $name = isset($_POST['name']) ? htmlspecialchars($_POST['name']) : '';
@@ -55,8 +65,32 @@
             $recaptcha = json_decode($recaptcha_result);
             if($recaptcha->success == true && $recaptcha->score >= 0.5 && $recaptcha->action == "submit"){ // If the response is valid
                 // run email send routine
-                mail($recipient, 'Contact Form Submission', $message, $headers);
-                echo 'Your message was sent successfully.'; // Success message
+                $mail = new PHPMailer();
+                $mail->isSMTP();
+                $mail->Host = "smtp.gmail.com";
+                $mail->SMTPSecure = "tls";
+                $mail->Port = 587;
+                $mail->SMTPAuth = true;
+                $mail->Username = 'howtovote2024@gmail.com';
+                $mail->Password = '4Vr@qgEgJt';
+
+                $mail->setFrom($email, $name);
+                $mail->addAddress($recipient, "HTV24 Admin");
+                $mail->Subject = 'Contact Form Submission';
+                $mail->Body = $message;
+                $mail->AltBody = $message;
+                $mail->isHTML(false);
+
+                if ($mail->send())
+                {
+                    echo 'Your message was sent successfully.'; // Success message
+                    echo "<a href='../view/home.php'>Go back to Home</a>";
+                }
+                else
+                {
+                    echo 'Something went wrong. Please try again later'; // Error message
+                    echo "<p>Error: " . $mail->ErrorInfo . "</p>";
+                }
             }else{
                 echo 'Something went wrong. Please try again later'; // Error message
             }
