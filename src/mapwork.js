@@ -163,7 +163,7 @@ function returnProvinceResults(abbr)
         case "EC":
             getPartyInfo("DA");
             getPartyInfo("EFF");
-            getPartyInfo("FFPlus");
+            getPartyInfo("PAC");
             break;
         case "NC":
             getPartyInfo("DA");

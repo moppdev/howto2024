@@ -137,25 +137,25 @@ function determineParty(score)
     let random_index = 0;
 
     // Check score against ranges to select a party within that section of political spectrum
-    if (score >= 29 && score <= 44)
+    if (score >= 29 && score <= 42)
     {
         name_array = ["PAC", "EFF"];
         random_index = Math.floor(Math.random() * 2);
         return getPartyInfo(name_array[random_index]);
     }
-    else if (score >= 45 && score <= 60)
+    else if (score >= 43 && score <= 55)
     {
         name_array = ["BOSA", "RISE", "GOOD", "PA"];
         random_index = Math.floor(Math.random() * 4);
         return getPartyInfo(name_array[random_index]);
     }
-    else if (score >= 61 && score <= 66)
+    else if (score >= 56 && score <= 71)
     {
-        name_array = ["ActionSA", "DA"];
+        name_array = ["DA", "ActionSA"];
         random_index = Math.floor(Math.random() * 2);
         return getPartyInfo(name_array[random_index]);
     }
-    else if (score >= 67 && score <= 81)
+    else if (score >= 72 && score <= 81)
     {
         name_array = ["ACDP", "IFP", "FFPlus"];
         random_index = Math.floor(Math.random() * 4);
