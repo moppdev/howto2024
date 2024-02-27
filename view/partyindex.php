@@ -1,6 +1,7 @@
 <?php include "head.php" ?>
     
     <title>How to Vote 2024 | Political Party Index</title>
+    <meta name="description" content="How to vote 2024: Here is the list of opposition parties covered by this site.">
 </head>
 <?php include "header.php" ?>
 

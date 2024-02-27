@@ -1,6 +1,7 @@
 <?php include "head.php" ?>
     
     <title>How to Vote 2024 | Voter Registration</title>
+    <meta name="description" content="Helps you check status or help you to register to vote for the first time for the NPE 2024. Also explains how voting works">
 </head>
 <?php include "header.php" ?>
 

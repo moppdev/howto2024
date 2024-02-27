@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <url>
+
+      <loc>http://www.howtovote2024.co.za/</loc>
+
+      <priority>1.0</priority>
+
+   </url>
+   
+   <url>
+
+      <loc>http://www.howtovote2024.co.za/view/partyquiz.php</loc>
+
+      <priority>0.6</priority>
+
+   </url>
+   
+    <url>
+
+      <loc>http://www.howtovote2024.co.za/view/voterregs.php</loc>
+
+      <priority>0.6</priority>
+
+   </url>
+   
+     <url>
+
+      <loc>http://www.howtovote2024.co.za/view/partyindex.php</loc>
+
+      <priority>0.6</priority>
+
+   </url>
+   
+     <url>
+
+      <loc>http://www.howtovote2024.co.za/view/strategicmap.php</loc>
+
+      <priority>0.6</priority>
+
+   </url>
+
+</urlset> 

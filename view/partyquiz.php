@@ -3,6 +3,8 @@
     <title>How to Vote 2024 | Party Quiz</title>
     <!-- Load the js file that we'll use to actually run the quiz -->
     <script src="../src/quiz.js" defer></script>
+    
+    <meta name="description" content="Recommends a party to vote for/support in the South African general elections 2024">
 </head>
 <?php include "header.php" ?>
 

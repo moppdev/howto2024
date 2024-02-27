@@ -11,7 +11,8 @@
             "parly_seats": 84,
             "party_site": "da.org.za",
             "values": ["Constitutionalism", "Non - Racialism", "Rule of Law", "Social Market Economy", "Federalism"],
-            "allied_with": "Multi-Party Charter"
+            "allied_with": "Multi-Party Charter",
+            "manifesto": "https://cdn.da.org.za/wp-content/uploads/2024/02/16143750/DA-Election-Manifesto-2024.pdf"
         },
         {
             "name": "Economic Freedom Fighters",
@@ -24,7 +25,8 @@
             "parly_seats": 44,
             "party_site": "effonline.org",
             "values": ["Left-wing populism", "Black Nationalism", "Pan Africanism", "Planned Economy/Communism", "Radical Economic Transformation"],
-            "allied_with": "N/A"
+            "allied_with": "N/A",
+            "manifesto": "https://effonline.org/wp-content/uploads/2024/02/A5-EFF-2024-Manifesto-full-version.pdf"
         },
         {
             "name": "Rise Mzansi",
@@ -37,7 +39,8 @@
             "parly_seats": null,
             "party_site": "risemzansi.org",
             "values": ["Constitutionalism", "Social Justice", "Equality", "Reform", "Social Democracy"],
-            "allied_with": "N/A"
+            "allied_with": "N/A",
+            "manifesto": "https://assets.website-files.com/6512abc58b1468c2e0784360/65ab627c5faa95ea313ab276_RISE%20Mzansi%20Manifesto%20%2B%20.pdf"
         },
         {
             "name": "Inkatha Freedom Party",
@@ -50,7 +53,8 @@
             "parly_seats": 14,
             "party_site": "ifp.org.za",
             "values": ["Solidarity", "Freedom", "Unity in Diversity", "Federalism", "Conservative"],
-            "allied_with": "Multi-Party Charter"
+            "allied_with": "Multi-Party Charter",
+            "manifesto": null
         },
         {
             "name": "Pan Africanist Congress of Azania",
@@ -63,7 +67,8 @@
             "parly_seats": 1,
             "party_site": "pac.org.za",
             "values": ["Pan Africanism", "Socialism", "Black Nationalism"],
-            "allied_with": "Azanian Liberation Front (with AZAPO)"
+            "allied_with": "Azanian Liberation Front (with AZAPO)",
+            "manifesto": null
         },
         {
             "name": "Patriotic Alliance",
@@ -76,7 +81,8 @@
             "parly_seats": null,
             "party_site": "votepa.org.za",
             "values": ["Populism", "Anti-immigration"],
-            "allied_with": "N/A"
+            "allied_with": "N/A",
+            "manifesto": null
         },
         {
             "name": "Good Party",
@@ -89,7 +95,8 @@
             "parly_seats": 2,
             "party_site": "forgood.org.za",
             "values": ["Social Justice", "Basic Income Grant/Universal Income", "Social Democracy", "Equity"],
-            "allied_with": "N/A" 
+            "allied_with": "N/A" ,
+            "manifesto": null
         },
         {
             "name": "ActionSA",
@@ -102,7 +109,8 @@
             "parly_seats": null,
             "party_site": "actionsa.org.za",
             "values": ["Non - Racialism", "Rule of Law", "Social Justice", "Ethical Leadership", "Economic Prosperity"],
-            "allied_with": "Multi-Party Charter" 
+            "allied_with": "Multi-Party Charter",
+            "manifesto": null
         },
         {
             "name": "Build One South Africa",
@@ -115,7 +123,8 @@
             "parly_seats": null,
             "party_site": "bosa.co.za",
             "values": ["Reform", "Centrism", "Equity, Unity and Inclusiveness", "Community"],
-            "allied_with": "N/A" 
+            "allied_with": "N/A",
+            "manifesto": null
         },
         {
             "name": "Freedom Front Plus",
@@ -128,7 +137,8 @@
             "parly_seats": 10,
             "party_site": "vfplus.org.za",
             "values": ["Minority Rights", "Self-Determination", "Afrikaans nationalism", "Christian Democracy"],
-            "allied_with": "Multi-Party Charter" 
+            "allied_with": "Multi-Party Charter",
+            "manifesto": null
         },
         {
             "name": "African Christian Democratic Party",
@@ -141,7 +151,8 @@
             "parly_seats": 4,
             "party_site": "acdp.org.za",
             "values": ["Christian Democracy", "Conservative", "Federalism"],
-            "allied_with": "Multi-Party Charter" 
+            "allied_with": "Multi-Party Charter",
+            "manifesto": null
         }
         
     ]

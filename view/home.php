@@ -1,6 +1,7 @@
 <?php include "head.php" ?>
     
     <title>How to Vote 2024 | Home</title>
+    <meta name="description" content="How to vote/who to vote for 2024: Use this site to help you figure out what opposition party/which opposition parties to support to unseat the ANC in 2024! Let's unite behind the opposition!">
 </head>
 <?php include "header.php" ?>
 

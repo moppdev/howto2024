@@ -20,13 +20,21 @@
             </div>
 
             <div>
-                <h3>Founded in: <?php echo $party_info["founded_year"] ?></h3>
-                <h3>Political Stance: <?php echo $party_info["political_stance"] ?></h3>
+                <h2>Founded in: <?php echo $party_info["founded_year"] ?></h2>
+                <h2>Political Stance: <?php echo $party_info["political_stance"] ?></h2>
             </div>
 
             <div>
                 <h2>Summary</h2>
                 <p><?php echo $party_summary ?></p>
+            </div>
+
+            <div>
+                <h2>
+                    <?php if($party_info['manifesto'] !== null) : ?>
+                            <a href="<?php echo $party_info["manifesto"] ?>">Download the <?php echo $party_info["abbr"] ?> 2024 Manifesto</a>
+                    <?php endif; ?>
+                </h2>
             </div>
         </div>
     </div>
