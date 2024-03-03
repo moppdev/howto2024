@@ -28,7 +28,7 @@
     <div class="map_intro">
         If you don't feel like thinking much about what party to vote for/support, and you agree the ANC must go, just vote strategically to remove the ANC! This map will return the top three 
         strongest parties in a province that could unseat the ANC or block the ANC from government (the Western Cape for example). The parties returned
-        are based on 2019, 2021 LGE and recent by-election results.
+        are based on 2019 NPE, 2021 LGE and by-election results between 2022 and 2024.
     </div>
 
     <div class="map_intro">

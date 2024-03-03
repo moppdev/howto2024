@@ -139,7 +139,7 @@ function determineParty(score)
     // Check score against ranges to select a party within that section of political spectrum
     if (score >= 29 && score <= 42)
     {
-        name_array = ["PAC", "EFF"];
+        name_array = ["PAC", "EFF", "MK"];
         random_index = Math.floor(Math.random() * 2);
         return getPartyInfo(name_array[random_index]);
     }

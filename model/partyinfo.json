@@ -47,7 +47,7 @@
             "abbr": "IFP",
             "logo": "../img/ifp_logo.png",
             "founded_year": 1975,
-            "political_stance": "right-wing",
+            "political_stance": "centre-right to right-wing",
             "party_leader": "Velenkosini Hlabisa",
             "leader_image": "../img/ifp_leader.png",
             "parly_seats": 14,
@@ -138,7 +138,7 @@
             "party_site": "vfplus.org.za",
             "values": ["Minority Rights", "Self-Determination", "Afrikaans nationalism", "Christian Democracy"],
             "allied_with": "Multi-Party Charter",
-            "manifesto": null
+            "manifesto": "https://www.vfplus.org.za/wp-content/uploads/2024/03/VF-Plus-Manifes-2024-Digitaal.pdf"
         },
         {
             "name": "African Christian Democratic Party",
@@ -153,6 +153,20 @@
             "values": ["Christian Democracy", "Conservative", "Federalism"],
             "allied_with": "Multi-Party Charter",
             "manifesto": null
+        },
+        {
+            "name": "uMkhonto we Sizwe",
+            "abbr": "MK",
+            "logo": "../img/mk_logo.png",
+            "founded_year": 2023,
+            "political_stance": "none/populism",
+            "party_leader": "Jacob Zuma",
+            "leader_image": "../img/mk_leader.png",
+            "parly_seats": null,
+            "party_site": "mkparty.org.za",
+            "values": ["Radical Economic Transformation", "Traditional Leadership", "Land Reform", "Pan Africanism"],
+            "allied_with": "N/A",
+            "manifesto": "https://mkparty.org.za/our-manifesto/"
         }
         
     ]

@@ -32,7 +32,7 @@
             <div>
                 <h2>
                     <?php if($party_info['manifesto'] !== null) : ?>
-                            <a href="<?php echo $party_info["manifesto"] ?>">Download the <?php echo $party_info["abbr"] ?> 2024 Manifesto</a>
+                            <a href="<?php echo $party_info["manifesto"] ?>">Download/View the <?php echo $party_info["abbr"] ?> 2024 Manifesto</a>
                     <?php endif; ?>
                 </h2>
             </div>
@@ -71,7 +71,7 @@
         </a>
 
         <div>
-            All information for the summary was taken from commonly available information from sites such as Wikipedia, ChatGPT and the party in question's own website.
+            All information for the summary was taken from commonly available information from sites such as Wikipedia, ChatGPT, news articles and the party in question's own website.
         </div>
     </div>
 </main>

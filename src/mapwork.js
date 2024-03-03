@@ -173,7 +173,7 @@ function returnProvinceResults(abbr)
         case "KZN":
             getPartyInfo("IFP");
             getPartyInfo("DA");
-            getPartyInfo("EFF");
+            getPartyInfo("MK");
             break;
         case "FS":
             getPartyInfo("DA");
