@@ -54,7 +54,7 @@
             "party_site": "ifp.org.za",
             "values": ["Solidarity", "Freedom", "Unity in Diversity", "Federalism", "Conservative"],
             "allied_with": "Multi-Party Charter",
-            "manifesto": null
+            "manifesto": "https://www.ifp.org.za/wp-content/uploads/2024/03/Inkatha-Freedom-Party-2024-Manifesto.pdf"
         },
         {
             "name": "Pan Africanist Congress of Azania",
@@ -68,7 +68,7 @@
             "party_site": "pac.org.za",
             "values": ["Pan Africanism", "Socialism", "Black Nationalism"],
             "allied_with": "Azanian Liberation Front (with AZAPO)",
-            "manifesto": null
+            "manifesto": "https://drive.google.com/file/d/1ZgIkXMNb7v1fkPdr8B97w822emR3MELD/view"
         },
         {
             "name": "Patriotic Alliance",
@@ -124,7 +124,7 @@
             "party_site": "bosa.co.za",
             "values": ["Reform", "Centrism", "Equity, Unity and Inclusiveness", "Community"],
             "allied_with": "N/A",
-            "manifesto": null
+            "manifesto": "https://static.pmg.org.za/BOSA_JOB_PLAN.pdf"
         },
         {
             "name": "Freedom Front Plus",
@@ -152,7 +152,7 @@
             "party_site": "acdp.org.za",
             "values": ["Christian Democracy", "Conservative", "Federalism"],
             "allied_with": "Multi-Party Charter",
-            "manifesto": null
+            "manifesto": "https://www.acdp.org.za/Manifesto2024.pdf"
         },
         {
             "name": "uMkhonto we Sizwe",
