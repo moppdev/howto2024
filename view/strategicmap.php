@@ -35,6 +35,8 @@
         Simply click on a province on the map to get started!
     </div>
 
+    <div id='map_load'>Loading the map...</div>
+
     <div id="map"></div>
 
     <h2 id="province_name"></h2>

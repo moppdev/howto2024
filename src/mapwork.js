@@ -243,6 +243,9 @@ async function updateProvinceGeometries() {
     style: defaultStyle,
     onEachFeature: eventsWrapper
   }).addTo(map);
+
+  // Remove loading message
+  document.getElementById("map_load").remove();
 }
 
 // Call the function to update province geometries
