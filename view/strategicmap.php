@@ -32,7 +32,7 @@
     </div>
 
     <div class="map_intro">
-        Simply click on a province on the map to get started!
+        Simply click on a province on the map to get started! <br> P.S. Recommended parties will display below the map.
     </div>
 
     <div id='map_load'>Loading the map...</div>

@@ -14,8 +14,21 @@ footer {
         position: relative;
 }
 
-.grecaptcha-badge {
-   display:none;
+#map_load {
+   font-weight: bold;
+   font-size: larger;
+}
+
+#party_img:hover {
+   background-color: rgb(153, 150, 219);
+}
+
+.img_result:hover{
+   background-color: rgb(153, 150, 219);
+}
+
+#result_btn {
+   font-size: x-large;
 }
 
 #index > li {
@@ -329,6 +342,12 @@ main {
             background-color: white;
             padding: 1em;
             border-radius: 2em;
+            margin-bottom: 1em;
+      }
+
+      #btn_link {
+         margin: 1em 0 1em 0;
+         display: block;
       }
 
    /* Hero section styling */
@@ -546,7 +565,7 @@ main {
    }
 
    #party_img {
-      width: 45%;
+      width: 42%;
          border: 2px solid black;
          background-color: white;
          padding: 1em;

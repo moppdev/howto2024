@@ -66,7 +66,7 @@
     </div>
 
     <div id="party_link">
-        <a href="http://<?php echo $party_info["party_site"] ?>" target="_blank">
+        <a href="https://www.<?php echo $party_info["party_site"] ?>" target="_blank">
             <button class="btn btn-primary btn-lg">Go to <?php echo $party_info["name"] ?>'s official site</button>
         </a>
 

@@ -199,10 +199,25 @@ function getPartyInfo(party_abbr)
                     const link = document.createElement("a");
                     link.id = "link_img"
                     link.href = `party.php?party=${abbr.toLowerCase()}`;
+
+                    const btnLink = document.createElement("a");
+                    btnLink.id = "btn_link"
+                    btnLink.href = `https://www.${party.party_site}`;
+                    btnLink.target = "_blank";
+
+                    const resultBtn = document.createElement("button");
+                    resultBtn.id = "result_btn";
+                    resultBtn.classList.add("btn");
+                    resultBtn.classList.add("btn-primary");
+                    resultBtn.classList.add("btn-lg");
+                    resultBtn.textContent = `Go to ${abbr}'s official site`;
+
+                    btnLink.appendChild(resultBtn);
                     
                     const main = document.getElementsByTagName("main")[0];
                     link.appendChild(image);
                     main.appendChild(link);
+                    main.appendChild(btnLink);
                     break;
                 }
             }
